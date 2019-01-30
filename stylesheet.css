@@ -1,0 +1,47 @@
+.ui-datepicker table tbody .ui-datepicker-week-col {
+    cursor: pointer;
+    color: red
+  }
+
+  #yearForm {
+      padding-bottom: 10px;
+  }
+
+  #yearTitle {
+      font-weight: bold;
+      font-size: 16px;
+      margin-left: 5px;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+  
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+  th{
+    width: 20px;
+    height: 20px;;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px 2px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    margin-left: 20px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
