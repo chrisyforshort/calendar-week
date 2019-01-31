@@ -1,3 +1,58 @@
+$(document).ready(function() {
+// Date Div JS //
+
+var choosenWeek
+
+var weeks = [
+    {
+        date: '01 May - 06 May',
+    },
+
+    {
+        date: '07 May - 13 May',
+    },
+    {
+        date: '14 May - 20 May',
+    },
+    {
+        date: '21 May - 27 May',
+    },
+    {
+        date: '28 May - 31 May',
+    },
+    {
+        date: '01 Jun - 03 Jun',
+    },
+    {
+        date: '04 Jun - 10 Jun',
+    },
+    {
+        date: '11 Jun - 17 Jun',
+    },
+    {
+        date: '18 Jun - 24 Jun',
+    },
+    {
+        date: '25 Jun - 30 Jun',
+    },
+    {
+        date: '25 Jun - 30 Jun',
+    },
+]
+
+$('th').hover(".tooltip", function () {
+        chosenWeek = weeks[$(this).attr("value")]
+        console.log(chosenWeek)
+        $("#datesDiv").html("<p id= 'choosenWeekCSS'>" + chosenWeek.date + "</p>")
+});
+
+// $(document).on("click", ".tooltip", function () {
+//     chosenWeek = weeks[$(this).attr("value")]
+//     console.log(chosenWeek)
+//     $("#datesDiv").html("<p id= 'choosenWeekCSS'>" + chosenWeek.date + "</p>")
+// });
+
+// Date Picker //
 // $(function() {
 //     document.addEventListener('DOMContentLoaded', function() {
 //         var elems = document.querySelectorAll('.dropdown-trigger');
@@ -79,3 +134,4 @@
 //     }
 // });
 // });
+});
