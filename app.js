@@ -1,6 +1,6 @@
 $(document).ready(function() {
 // Date Div JS //
-
+console.log('hi');
 var choosenWeek
 
 var weeks = [
@@ -45,6 +45,8 @@ $('th').hover(".tooltip", function () {
         console.log(chosenWeek)
         $("#datesDiv").html("<p id= 'choosenWeekCSS'>" + chosenWeek.date + "</p>")
 });
+
+console.log("bye");
 
 // $(document).on("click", ".tooltip", function () {
 //     chosenWeek = weeks[$(this).attr("value")]
