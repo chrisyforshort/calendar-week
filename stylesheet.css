@@ -19,6 +19,14 @@
       margin-top: -5px;
   }
 
+  .darkbg {
+      background-color: #0f411ad0;
+  }
+
+  .whitebg {
+      background-color: white;
+  }
+
   #choosenWeekCSS {
     border: 1px solid black;
     width: 120px;
