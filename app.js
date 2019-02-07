@@ -196,13 +196,15 @@ $(document).ready(function() {
     ]
 
 // Function to allow hover to show the weeks in the date box //
-    $('th').hover(".tooltip", function () {
-            chosenWeek = weeks[$(this).attr("value")]
-            $("#datesDiv").html("<p id= 'choosenWeekCSS'>" + chosenWeek.date + "</p>")
-    });
+    // $('th').hover(".tooltip", function () {
+    //         chosenWeek = weeks[$(this).attr("value")]
+    //         $("#datesDiv").html("<p id= 'choosenWeekCSS'>" + chosenWeek.date + "</p>")
+    // });
 
 // Function to color out the date when a date is selected //
     $(document).on("click", ".tooltip", function () {
+        chosenWeek = weeks[$(this).attr("value")]
+        $("#datesDiv").html("<p id= 'choosenWeekCSS'>" + chosenWeek.date + "</p>")
         $(".tooltip").addClass("whitebg")
         $(this).removeClass("whitebg")
         $(this).addClass("darkbg");
